@@ -12,10 +12,11 @@ const Welcome = () => {
         </div>
       </div>
       <div className = 'right-container'>
-        <div className = 'beige-inner'>
-          <h1>Inside Out Painting</h1>
-          <p>WE ARE KNOWN FOR OUR QUALITY WORK AND COMPETITIVE PRICING.</p>
+        <div className = 'beige'>
+          <h1 className= 'title text'>Inside Out Painting</h1>
+          <p className= 'description text'>WE ARE KNOWN FOR OUR QUALITY WORK AND COMPETITIVE PRICING.</p>
         </div>
+        <div className= 'orange'></div>
       </div>
     </div>
 
