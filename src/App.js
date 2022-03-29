@@ -1,8 +1,14 @@
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar/Navbar'
+import Welcome from './components/Welcome/Welcome';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <Navbar />
+      <main>
+        <Welcome />
+      </main>
     </div>
   );
 }

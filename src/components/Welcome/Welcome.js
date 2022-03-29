@@ -1,14 +1,15 @@
 import './welcome.css';
-import leftImg from "../assets/cover/cover-image.png";
-const Welcome = () => {
+import leftImg from "../../assets/cover/cover-image.png";
+
+function Welcome() {
 
   return(
-
     <div className = 'container'>  
       <hr className = 'line'></hr>
       <div className = 'left-conatainer'>
         <div className = 'left-Img'>
-          <img className = 'img' src={leftImg}></img>
+          <img src={leftImg} className ='img-1' />
+
         </div>
       </div>
       <div className = 'right-container'>
@@ -22,4 +23,4 @@ const Welcome = () => {
   )
 }
 
-export default Welcome
+export default Welcome;
