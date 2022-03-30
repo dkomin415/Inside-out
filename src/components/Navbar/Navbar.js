@@ -1,29 +1,16 @@
 import React from 'react';
-import './navbar.css';
+import { NavbarContainer, LeftContainer, RightContainer, NavbarExtendedContainer, NavbarInnerContainer } from "../../styles/Navbar.style";
 
 function Navbar() {
-
   return (
-    <header>
-      <h2>
-        <a href="/">
-          <span role="img" aria-label='camera'> 📸</span> Snap!
-        </a>
-      </h2>
-      <nav>
-        <ul className="flex-row">
-          <li className="mx=2">
-            <a href='#welcome'>
-              Welcome
-            </a>
-          </li>
-          <li>
-            <span>Contact</span>
-          </li>
-        </ul>
-      </nav>
-    </header>
+  <NavbarContainer>
+    <NavbarInnerContainer>
+    <LeftContainer> </LeftContainer>
+     <RightContainer></RightContainer>
+    </NavbarInnerContainer>
+    <NavbarExtendedContainer> </NavbarExtendedContainer>
+     </NavbarContainer>
   );
-} 
+}
 
 export default Navbar;
