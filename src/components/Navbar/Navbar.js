@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavbarContainer, LeftContainer, RightContainer, NavbarExtendedContainer, NavbarInnerContainer, NavbarLinkContainer, NavbarLink } from "../../styles/Navbar.style";
+import { NavbarContainer, LeftContainer, RightContainer, NavbarExtendedContainer, NavbarInnerContainer, NavbarLinkContainer, NavbarLink, Logo, MenuHamburger } from "../../styles/Navbar.style";
+import LogoImg from "../../assets/In&OutLogo.png";
 
 
 function Navbar() {
@@ -7,6 +8,7 @@ function Navbar() {
   <NavbarContainer>
     <NavbarInnerContainer>
     <LeftContainer>
+      <Logo src={LogoImg}></Logo>
        </LeftContainer>
      <RightContainer>
 
@@ -15,6 +17,7 @@ function Navbar() {
         <NavbarLink to="/projects">Projects</NavbarLink>
         <NavbarLink to="/services">Services</NavbarLink>
         <NavbarLink to="/contact">Contact</NavbarLink>
+        <MenuHamburger> &#8801;</MenuHamburger>
 
       </NavbarLinkContainer>
      </RightContainer>
