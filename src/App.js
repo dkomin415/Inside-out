@@ -2,6 +2,7 @@ import React from 'react';
 import "./App.css";
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Welcome from './components/Welcome/Welcome';
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
         <Route path="/services" />
         <Route path="/contact" />
       </Routes>
+      <main>
+      <Welcome />
+
+      </main>
     </Router>
 
   );

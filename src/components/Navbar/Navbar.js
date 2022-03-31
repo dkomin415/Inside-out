@@ -48,7 +48,7 @@ function Navbar() {
             <NavbarLinkExtended to="/contact">Contact</NavbarLinkExtended>
       </NavbarExtendedContainer>
       )}
-
+{/* the stripe used for design */}
 <NavStripeBlack></NavStripeBlack>
 <NavStripeOrange>
 </NavStripeOrange>
