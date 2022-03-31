@@ -1,6 +1,6 @@
 .line {
   position: absolute;
-  border-top: 10px solid black;
+  border-top: 10px solid #27251F
 }
 
 .left-container {
@@ -26,12 +26,12 @@
 }
 
 .orange {
-  background-color: orange;
+  background-color: #DE591F;
 }
 
 .beige {
   padding: 100px 100px;
-  background-color: bisque;
+  background-color: #EFD19F;
 }
 
 .text {
