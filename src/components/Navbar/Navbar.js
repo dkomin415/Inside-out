@@ -11,6 +11,7 @@ import {
   Logo,
   MenuHamburger,
   NavStripeBlack,
+  NavStripeOrange,
 } from "../../styles/Navbar.style";
 import LogoImg from "../../assets/In&OutLogo.png";
 
@@ -47,7 +48,11 @@ function Navbar() {
             <NavbarLinkExtended to="/contact">Contact</NavbarLinkExtended>
       </NavbarExtendedContainer>
       )}
-      <NavStripeBlack></NavStripeBlack>
+
+<NavStripeBlack></NavStripeBlack>
+<NavStripeOrange>
+</NavStripeOrange>
+<NavStripeBlack></NavStripeBlack>
     </NavbarContainer>
   );
 }

@@ -94,14 +94,22 @@ export const NavbarLinkExtended = styled(Link)`
     }
     `;
 
+    export const NavStripeOrange = styled.div`
+    width: 100%;
+    height: 5px;
+    background-color: #FD5A1E;
+    display: flex;
+    flex-direction: column;
+`;
+
     export const NavStripeBlack = styled.div`
     width: 100%;
-    height: 10px;
+    height: 5px;
     background-color: #27251F;
     display: flex;
     flex-direction: column;
 
-    /* @media (max-width: 767px) {
+    @media (min-width: 767px) {
       display: none;
-    } */
+    }
     `;
