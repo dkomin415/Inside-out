@@ -1,5 +1,10 @@
 .line {
+  position: absolute;
   border-top: 10px solid black;
+}
+
+.left-container {
+  position: relative;
 }
 
 .container {
@@ -17,10 +22,18 @@
 }
 
 .right-container {
+  height: 100%;
+}
+
+.orange {
   background-color: orange;
 }
 
-.beige-inner {
-  padding: 100px 200px;
+.beige {
+  padding: 100px 100px;
   background-color: bisque;
+}
+
+.text {
+  width: 600px;
 }
