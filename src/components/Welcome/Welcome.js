@@ -5,27 +5,22 @@ const Welcome = () => {
   return (
     <div className="welcome-container">
       <div className="welcome-left">
+      <div className = 'left-Img'>
         <img
         // placeholder image
           src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
           alt="welcome"
         />
       </div>
+      </div>
       <div className="welcome-right">
-        <h1>Welcome to Inside-Out</h1>
-        <p>
-          Inside-Out is a full service design studio based in the heart of
-          London. We are a team of creative and experienced designers and
-          developers who are passionate about creating beautiful and functional
-          websites and applications.
-        </p>
-        <p>
-          We are a team of creative and experienced designers and developers who
-          are passionate about creating beautiful and functional websites and
-          applications.
-        </p>
+        <div className = 'beige'>
+          <h1 className= 'title text'>Inside Out Painting</h1>
+          <p className= 'description text'>WE ARE KNOWN FOR OUR QUALITY WORK AND COMPETITIVE PRICING.</p>
         </div>
-    </div>
+        <div className= 'orange'></div>
+        </div>
+      </div>
   );
 };
 
