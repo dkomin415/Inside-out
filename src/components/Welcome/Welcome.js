@@ -1,4 +1,4 @@
-import "./Welcome.css";
+import "./welcome.css";
 
 const Welcome = () => {
   // function to split the page into two sections with a image on one side and text and design on the other side
