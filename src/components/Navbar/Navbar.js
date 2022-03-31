@@ -1,29 +1,54 @@
-import React from 'react';
-import { NavbarContainer, LeftContainer, RightContainer, NavbarExtendedContainer, NavbarInnerContainer, NavbarLinkContainer, NavbarLink, Logo, MenuHamburger } from "../../styles/Navbar.style";
+import React, { useState } from "react";
+import {
+  NavbarContainer,
+  LeftContainer,
+  RightContainer,
+  NavbarExtendedContainer,
+  NavbarInnerContainer,
+  NavbarLinkContainer,
+  NavbarLink,
+  NavbarLinkExtended,
+  Logo,
+  MenuHamburger,
+  NavStripeBlack,
+} from "../../styles/Navbar.style";
 import LogoImg from "../../assets/In&OutLogo.png";
 
-
 function Navbar() {
+  const [extendNavbar, setExtendNavbar] = useState(false);
+
   return (
-  <NavbarContainer>
-    <NavbarInnerContainer>
-    <LeftContainer>
-      <Logo src={LogoImg}></Logo>
-       </LeftContainer>
-     <RightContainer>
-
-      <NavbarLinkContainer>
-        <NavbarLink to="/">Home</NavbarLink>
-        <NavbarLink to="/projects">Projects</NavbarLink>
-        <NavbarLink to="/services">Services</NavbarLink>
-        <NavbarLink to="/contact">Contact</NavbarLink>
-        <MenuHamburger> &#8801;</MenuHamburger>
-
-      </NavbarLinkContainer>
-     </RightContainer>
-    </NavbarInnerContainer>
-    <NavbarExtendedContainer> </NavbarExtendedContainer>
-     </NavbarContainer>
+    <NavbarContainer extendNavbar={extendNavbar}>
+      <NavbarInnerContainer>
+        <LeftContainer>
+          <Logo src={LogoImg}></Logo>
+        </LeftContainer>
+        <RightContainer>
+          <NavbarLinkContainer>
+            <NavbarLink to="/">Home</NavbarLink>
+            <NavbarLink to="/projects">Projects</NavbarLink>
+            <NavbarLink to="/services">Services</NavbarLink>
+            <NavbarLink to="/contact">Contact</NavbarLink>
+            <MenuHamburger
+              onClick = {() => {
+                setExtendNavbar((curr) => !curr);
+              }}
+            >
+              {extendNavbar ? <>&#8801;</> : <> &#8801;</>}
+            </MenuHamburger>
+          </NavbarLinkContainer>
+        </RightContainer>
+      </NavbarInnerContainer>
+      {extendNavbar && (
+        <NavbarExtendedContainer>
+            <NavbarLinkExtended to="/">Home</NavbarLinkExtended>
+            <NavbarLinkExtended to="/projects">Projects</NavbarLinkExtended>
+            <NavbarLinkExtended to="/services">Services</NavbarLinkExtended>
+            <NavbarLinkExtended to="/contact">Contact</NavbarLinkExtended>
+      </NavbarExtendedContainer>
+      )}
+      <NavStripeBlack></NavStripeBlack>
+    </NavbarContainer>
   );
 }
 
