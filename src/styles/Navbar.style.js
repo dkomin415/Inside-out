@@ -23,29 +23,35 @@ export const NavbarContainer = styled.nav`
   }
 `;
 
-export const RightContainer = styled.div`
-  flex: 70%;
-  display: flex;
-  align-items: center;
-  padding-left: 5%;
-`;
-
 export const LeftContainer = styled.div`
   flex: 30%;
   display: flex;
-  justify-content: flex-end;
-  padding-right: 50%;
+  justify-content: space-evenly;
   `;
 
-export const NavbarInnerContainer = styled.div`
+export const Number = styled.h2`
+  display: flex;
+  align-items: center;
+
+`;
+
+export const RightContainer = styled.div`
+  flex: 70%;
+  display: flex;
+  padding-left: 5%;
+  align-items: center;
+  justify-content: flex-end;
+  `;  
+
+  export const NavbarInnerContainer = styled.div`
   width: 100%;
   height: 80px;
   display: flex;
   `;
-
+  
   export const NavbarLinkContainer = styled.div`
-    display: flex;
-    `;
+  display: flex;
+  `;
 
 export const NavbarLink = styled(Link)`
   color: #27251F;
@@ -78,6 +84,8 @@ export const NavbarLinkExtended = styled(Link)`
   /* color: #27251F; */
   font-size: 45px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
   
   @media (min-width: 767px) {
     display: none;

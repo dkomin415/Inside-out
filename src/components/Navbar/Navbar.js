@@ -8,6 +8,7 @@ import {
   NavbarLinkContainer,
   NavbarLink,
   NavbarLinkExtended,
+  Number,
   Logo,
   MenuHamburger,
   NavStripeBlack,
@@ -23,6 +24,7 @@ function Navbar() {
       <NavbarInnerContainer>
         <LeftContainer>
           <Logo src={LogoImg}></Logo>
+          <Number>415-800-9999</Number>
         </LeftContainer>
         <RightContainer>
           <NavbarLinkContainer>
