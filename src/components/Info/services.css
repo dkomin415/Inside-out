@@ -1,0 +1,39 @@
+.page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #EFD19F;
+}
+
+.card {
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #DE591F;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin-bottom: 20px;
+}
+
+.card-inner-text {
+  padding: 20px;
+
+
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-inner-text {
+    padding: 10px;
+  }
+
+  .page {
+    flex-direction: column;
+  }
+}
+  
