@@ -3,8 +3,11 @@ import { Link } from "react-router-dom";
 
 export const Logo = styled.img`
   margin: 10px;
-  max-width: 180px;
-  height: auto;
+  max-width: 80px;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
 
   @media (max-width: 500px) {
     display: none;
@@ -19,7 +22,7 @@ export const NavbarContainer = styled.nav`
   height: ${(props) => (props.extendNavbar ? "100vh" : "80px")};
 
   @media (min-width: 767px) {
-    height: 80px;
+    height: 100px;
   }
 `;
 
@@ -32,7 +35,6 @@ export const LeftContainer = styled.div`
 export const Number = styled.h2`
   display: flex;
   align-items: center;
-
 `;
 
 export const RightContainer = styled.div`

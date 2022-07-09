@@ -13,7 +13,7 @@ import {
   MenuHamburger,
   NavStripeBlack,
   NavStripeOrange,
-} from "../../styles/Navbar.style";
+} from "./Navbar.style";
 import LogoImg from "../../assets/In&OutLogo.png";
 
 function Navbar() {
@@ -51,10 +51,10 @@ function Navbar() {
       </NavbarExtendedContainer>
       )}
 {/* the stripe used for design */}
-<NavStripeBlack></NavStripeBlack>
+{/* <NavStripeBlack></NavStripeBlack>
 <NavStripeOrange>
 </NavStripeOrange>
-<NavStripeBlack></NavStripeBlack>
+<NavStripeBlack></NavStripeBlack> */}
     </NavbarContainer>
   );
 }
